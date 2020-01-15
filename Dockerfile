@@ -5,7 +5,7 @@ RUN useradd automation --shell /bin/bash --create-home
 
 # PHP configuration & debugging
 RUN apt-get update -yqq \
-    && apt-get install apt-utlis \
+    && apt-get install -yqq apt-utils \
     && apt-get install git \
             libmcrypt-dev libpq-dev libcurl4-gnutls-dev \
             libicu-dev libvpx-dev libjpeg-dev libpng-dev \
